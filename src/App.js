@@ -7,6 +7,8 @@ import Budget from './components/Budget';
 import Remaining from './components/Remaining';
 import ExpenseTotal from './components/ExpenseTotal';
 import ExpenseList from './components/ExpenseList';
+import DropdownComponent from './components/Dropdown';
+
 import ExpenseItem from './components/ExpenseItem';
 
 
@@ -14,8 +16,11 @@ import ExpenseItem from './components/ExpenseItem';
 
 
 import { AppProvider } from './context/AppContext';
+import { AppContext } from './context/AppContext';
 import AllocationForm from './components/AllocationForm';
+//import { Dropdown } from 'bootstrap';
 const App = () => {
+
     return (
         <AppProvider>
             <div className='container'>
@@ -52,7 +57,7 @@ const App = () => {
                         {
                             /* Add ExpenseItem component here */
                             <div className='col-sm'>
-                                <ExpenseItem />
+                                <DropdownComponent/>
                             </div>
                         }        
 
